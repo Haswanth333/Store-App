@@ -1,0 +1,11 @@
+#logo {
+  background-color: #fc7f03;
+  font-weight: 700;
+  width: 10rem;
+  border-radius: 5px;
+  font-size: 25px;
+}
+
+span {
+  color: blue;
+}
