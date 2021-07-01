@@ -1,12 +1,23 @@
 import React from "react";
 import "./App.css";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import NavBar from "./components/NavBar";
+import Header from "./containers/Header";
+import ProductListing from "./containers/ProductListing";
+import ProductDetail from "./containers/ProductDetail";
 
 function App() {
   return (
     <div className="App">
-      {/* <h1>Store App</h1> */}
-      <NavBar />
+      <Router>
+        <Header />
+        <NavBar />
+        <Switch>
+          <Route path="/" exact component={ProductListing} />
+          <Route path="/product/:productId" exact component={ProductDetail} />
+          <Route>404 Not Found</Route>
+        </Switch>
+      </Router>
     </div>
   );
 }
