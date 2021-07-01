@@ -11,7 +11,7 @@ function App() {
     <div className="App">
       <Router>
         <Header />
-        <NavBar />
+        {/* <NavBar /> */}
         <Switch>
           <Route path="/" exact component={ProductListing} />
           <Route path="/product/:productId" exact component={ProductDetail} />
