@@ -1,0 +1,28 @@
+:root{
+  --mainBlue: #2a2a72;
+  --lightBlue:#059BE5;
+  --mainWhite:#f3f3f3;
+  --mainDark: #232528;
+  --mainYellow: #FFCB2B;
+}
+
+body{
+  font-family: 'Poppins', sans-serif !important;
+  background: var(--mainYellow) !important;
+  /* color: var(--mainWhite) !important; */
+  color: var(--mainDark);
+}
+
+.text-title{
+  font-family: 'Poppins', sans-serif !important;
+  letter-spacing: 0.3rem;
+  text-transform: uppercase; 
+}
+
+.text-blue{
+  color: var(--mainBlue);
+}
+
+.text-bight{
+  color: var(--lightBlue);
+}
